@@ -14,12 +14,14 @@ body {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: end;
   border: 3px solid black;
   margin: 3px;
 }
 
 header h1 {
   color: black;
+  font-size: 400%;
 }
 
 nav ul li {
@@ -29,6 +31,7 @@ nav ul li {
 a {
   text-decoration: none;
   color: black;
+  font-size: 150%;
 }
 
 .avatar-background {
@@ -54,21 +57,25 @@ main {
   display: flex;
   flex-direction: column;
   border: 3px solid black;
-  margin: 3px 10vw 3px 10vw;
-}
-
-main h2 {
-  font-size: 300%;
-  border-right: 2px solid black;
-  padding: 1%;
-  margin: 10% 0;
-}
-
-main p {
-  font-size: 200%;
-  margin: 10% 0;
+  margin: 3px 5vw 3px 5vw;
 }
 
 main section {
   display: flex;
+  border: 3px solid black;
+  margin: 3px;
+}
+
+main h2 {
+  font-size: 350%;
+  text-align: right;
+  border: 2px solid black;
+  padding: 1%;
+  margin: 5% 1%;
+}
+
+main p {
+  font-size: 200%;
+  margin: 5% 1%;
+  line-height: 125%;
 }
