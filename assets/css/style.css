@@ -21,7 +21,7 @@ header {
 
 header h1 {
   color: black;
-  font-size: 40px;
+  font-size: 375%;
   padding-left: 2%;
 }
 
@@ -31,6 +31,7 @@ header nav {
 
 nav ul li {
   display: inline;
+  margin-left: 10px;
 }
 
 a {
@@ -70,7 +71,7 @@ a {
 
 /*Create a class to format all section headings same way.*/
 .main-section h2 {
-  font-size: 26px;
+  font-size: 300%;
   width: 25%;
   text-align: right;
   border: 2px solid black;
@@ -84,6 +85,10 @@ a {
   padding: 20px;
   margin: 10px;
 }
+.section-right p {
+  font-size: 200%;
+}
+
 .projects {
   display: flex;
   flex-direction: column;
@@ -129,15 +134,13 @@ a {
   filter: blur(0);
 }
 
-#contact-me {
-  display: flex;
-}
-
 .contact-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-.contact-list ul {
+.contact-list ul li {
   display: inline;
+  font-size: 200%;
+  margin-right: 10px;
 }
