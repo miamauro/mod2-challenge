@@ -1,3 +1,4 @@
+/*Set the font size to 62.5% (equal to 10px) in order to calculate rems easily.*/
 * {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 62.5%;
@@ -11,6 +12,7 @@ body {
   border: 3px solid black;
 }
 
+/*Use the justify-content property to space items on opposite sides of the page.*/
 header {
   display: flex;
   justify-content: space-between;
@@ -21,11 +23,12 @@ header {
 
 header h1 {
   color: black;
-  font-size: 375%;
+  font-size: 3.5rem;
   padding-left: 2%;
 }
 
 header nav {
+  display: flex;
   padding-right: 2%;
 }
 
@@ -37,9 +40,10 @@ nav ul li {
 a {
   text-decoration: none;
   color: black;
-  font-size: 150%;
+  font-size: 1.5rem;
 }
 
+/*Use the justify-content property to align the flex items along the main axis.*/
 .avatar-background {
   height: 200px;
   display: flex;
@@ -64,14 +68,14 @@ a {
 .main-section {
   display: flex;
   justify-content: space-between;
-  width: 80vw;
+  width: 90vw;
   border: 3px solid black;
   margin: 3px auto;
 }
 
 /*Create a class to format all section headings same way.*/
 .main-section h2 {
-  font-size: 300%;
+  font-size: 2rem;
   width: 25%;
   text-align: right;
   border: 2px solid black;
@@ -86,7 +90,8 @@ a {
   margin: 10px;
 }
 .section-right p {
-  font-size: 200%;
+  font-size: 1rem;
+  line-height: 120%;
 }
 
 .projects {
@@ -94,6 +99,7 @@ a {
   flex-direction: column;
 }
 
+/*Blur the image using the blur filter.*/
 .large-project {
   height: 400px;
   width: 100%;
@@ -119,6 +125,7 @@ a {
   width: 50%;
 }
 
+/*Blur the images using the blur filter.*/
 .smaller-projects a img {
   width: 100%;
   height: 200px;
@@ -129,6 +136,7 @@ a {
   display: flex;
 }
 
+/*Set the blur filter to 0 to remove the blur when the user hovers over the element.*/
 .large-project:hover,
 .smaller-projects img:hover {
   filter: blur(0);
@@ -139,8 +147,16 @@ a {
   justify-content: space-between;
 }
 
+/*Use an inline display to show list items horizontally.*/
 .contact-list ul li {
   display: inline;
-  font-size: 200%;
+  font-size: 1.5rem;
   margin-right: 10px;
+}
+
+/*Use media queries to provide a responsive layout that adapts to my viewport on various screens and devices.*/
+@media screen and (max-width: 711px) {
+  nav {
+    flex-direction: column;
+  }
 }
