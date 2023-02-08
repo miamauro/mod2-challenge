@@ -27,20 +27,21 @@ header h1 {
   padding-left: 2%;
 }
 
-header nav {
+.navbar {
   display: flex;
-  padding-right: 2%;
+  justify-content: space-between;
 }
 
-nav ul li {
-  display: inline;
-  margin-left: 10px;
+.navlinks {
+  display: flex;
+  justify-content: space-between;
 }
 
-a {
+.navlinks a {
   text-decoration: none;
   color: black;
   font-size: 1.5rem;
+  margin: 0 10px;
 }
 
 /*Use the justify-content property to align the flex items along the main axis.*/
@@ -142,21 +143,28 @@ a {
   filter: blur(0);
 }
 
-.contact-list {
-  display: flex;
-  justify-content: space-between;
+/*Use inline display to show list items horizontally.*/
+.contact-items {
+  font-size: 1.5rem;
+  display: inline;
+  text-decoration: none;
+  margin: 0 10px;
 }
 
-/*Use an inline display to show list items horizontally.*/
-.contact-list ul li {
-  display: inline;
-  font-size: 1.5rem;
-  margin-right: 10px;
+.contact-list a {
+  text-decoration: none;
+  color: black;
 }
 
 /*Use media queries to provide a responsive layout that adapts to my viewport on various screens and devices.*/
 @media screen and (max-width: 711px) {
-  nav {
+  .navlinks {
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .contact-items {
+    display: block;
   }
 }
