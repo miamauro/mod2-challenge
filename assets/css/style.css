@@ -112,6 +112,8 @@ header h1 {
 }
 
 .project-title {
+  color: black;
+  font-size: 1.5rem;
   position: absolute;
   bottom: 20px;
   left: 20px;
