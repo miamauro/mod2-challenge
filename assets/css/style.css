@@ -22,6 +22,11 @@ header {
 header h1 {
   color: black;
   font-size: 400%;
+  padding-left: 2%;
+}
+
+header nav {
+  padding-right: 2%;
 }
 
 nav ul li {
@@ -42,11 +47,12 @@ a {
   margin: 3px;
 }
 
+/*Round out corners of photo to create an avatar.*/
 .avatar {
   position: relative;
   height: 200px;
   width: 200px;
-  margin-right: 150px;
+  margin-right: 300px;
   margin-top: 30px;
   border-radius: 50%;
   box-shadow: 5px 5px 5px var(--pink);
@@ -60,22 +66,61 @@ main {
   margin: 3px 5vw 3px 5vw;
 }
 
-main section {
+.main-section {
   display: flex;
+  justify-content: space-between;
   border: 3px solid black;
   margin: 3px;
 }
 
-main h2 {
-  font-size: 350%;
+.main-section h2 {
+  font-size: 26px;
+  width: 25%;
   text-align: right;
   border: 2px solid black;
-  padding: 1%;
-  margin: 5% 1%;
+  padding: 20px;
+  margin: 10px;
 }
 
-main p {
-  font-size: 200%;
-  margin: 5% 1%;
-  line-height: 125%;
+.section-right {
+  width: 70%;
+  padding: 20px;
+  margin: 10px;
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+
+.large-project {
+  height: 400px;
+  width: 100%;
+}
+
+.smaller-projects {
+  display: flex;
+  justify-content: center;
+}
+
+.smaller-projects a {
+  /* height: 200px; */
+  width: 50%;
+}
+
+.smaller-projects a img {
+  width: 100%;
+  height: 200px;
+}
+
+#contact-me {
+  display: flex;
+}
+
+.contact-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-list ul {
+  display: inline;
 }
