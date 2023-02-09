@@ -7,3 +7,8 @@ This project is to create my web development portfolio. My portfolio showcases s
 ## Usage
 
 Below is a link to the deployed application along with a screenshot of the application's appearance.
+
+https://miamauro.github.io/mod2-challenge/
+
+![plot](./assets/images/screenshot1.png)
+![plot](./assets/images/screenshot2.png)
